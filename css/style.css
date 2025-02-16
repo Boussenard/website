@@ -1,0 +1,417 @@
+/* Общие стили */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+.auth {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.auth button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.auth button:hover {
+    background-color: #e65c00;
+}
+
+#cartIcon {
+    position: relative;
+    cursor: pointer;
+}
+
+#cartIcon img {
+    width: 30px;
+    height: 30px;
+}
+
+#cartCount {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #ff6600;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 0.8rem;
+}
+
+/* Секция героя */
+.hero {
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    color: 333;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hero .btn:hover {
+    background-color: #e65c00;
+}
+
+/* Секция популярных товаров */
+.featured-products {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.products-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product h3 {
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+
+.product p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Подвал */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+/* Стили для страницы с товарами */
+.product-details {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-details h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.product {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    text-align: left;
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product h2 {
+    font-size: 1.8rem;
+    margin: 15px 0;
+}
+
+.product p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Стили для страницы контактов */
+.contact-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.map {
+    margin: 20px 0;
+}
+
+.contact-form {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.contact-form button:hover {
+    background-color: #e65c00;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.auth {
+    display: flex;
+    gap: 10px;
+}
+
+.auth button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.auth button:hover {
+    background-color: #e65c00;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    max-width: 100%;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #ff6600;
+}
+
+#cartIcon {
+    position: relative;
+    cursor: pointer;
+}
+
+#cartIcon img {
+    width: 30px;
+    height: 30px;
+}
+
+#cartCount {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #ff6600;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 0.8rem;
+}
+
+.add-to-cart {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.add-to-cart:hover {
+    background-color: #e65c00;
+}
+
+/* Общие стили для формы */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+/* Стили для меток (labels) */
+.form-group label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+/* Стили для полей ввода */
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Для размещения метки и поля ввода на одной строке */
+@media (min-width: 768px) {
+    .form-group {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .form-group label {
+        flex: 1;
+        text-align: right;
+        margin-right: 10px;
+    }
+
+    .form-group input {
+        flex: 2;
+    }
+}

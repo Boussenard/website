@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товары - Магазин экипировки для пауэрлифтинга</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Логотип магазина">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="product.html">Товары</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="auth">
+            <button id="loginBtn">Войти</button>
+            <button id="registerBtn">Регистрация</button>
+            <div id="cartIcon">
+                <img src="images/cart.png" alt="Корзина">
+                <span id="cartCount">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <section class="product-details">
+            <h1>Наши товары</h1>
+            <div id="belt" class="product">
+                <img src="images/belt.jpg" alt="Пояс для пауэрлифтинга">
+                <h2>Пояс для пауэрлифтинга</h2>
+                <p><strong>Цена:</strong> 2999 руб.</p>
+                <p><strong>Описание:</strong> Прочный пояс из натуральной кожи для поддержки спины во время тяжелых упражнений.</p>
+                <button class="add-to-cart" data-name="Пояс для пауэрлифтинга" data-price="2999">Добавить в корзину</button>
+            </div>
+
+            <div id="wraps" class="product">
+                <img src="images/wraps.jpg" alt="Бинты для запястий">
+                <h2>Бинты для запястий</h2>
+                <p><strong>Цена:</strong> 999 руб.</p>
+                <p><strong>Описание:</strong> Эластичные бинты для фиксации запястий во время жима лежа.</p>
+                <button class="add-to-cart" data-name="Бинты для запястий" data-price="999">Добавить в корзину</button>
+            </div>
+
+            <div id="shoes" class="product">
+                <img src="images/shoes.jpg" alt="Обувь для приседаний">
+                <h2>Обувь для приседаний</h2>
+                <p><strong>Цена:</strong> 4999 руб.</p>
+                <p><strong>Описание:</strong> Специальная обувь с устойчивой подошвой для выполнения приседаний.</p>
+                <button class="add-to-cart" data-name="Обувь для приседаний" data-price="4999">Добавить в корзину</button>
+            </div>
+
+            <div id="knee-sleeves" class="product">
+                <img src="images/knee-sleeves.jpg" alt="Наколенники">
+                <h2>Наколенники</h2>
+                <p><strong>Цена:</strong> 1999 руб.</p>
+                <p><strong>Описание:</strong> Наколенники для защиты суставов во время тяжелых упражнений.</p>
+                <button class="add-to-cart" data-name="Наколенники" data-price="1999">Добавить в корзину</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Модальное окно для авторизации -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <h2>Авторизация</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Имя пользователя:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Войти</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Модальное окно для регистрации -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <h2>Регистрация</h2>
+            <form id="registerForm">
+                <label for="regUsername">Имя пользователя:</label>
+                <input type="text" id="regUsername" name="username" required>
+
+                <label for="regEmail">Email:</label>
+                <input type="email" id="regEmail" name="email" required>
+
+                <label for="regPassword">Пароль:</label>
+                <input type="password" id="regPassword" name="password" required>
+
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Подвал сайта -->
+    <footer>
+        <p>&copy; 2023 Магазин экипировки для пауэрлифтинга. Все права защищены.</p>
+        <p>Телефон: +7 (812) 346-78-90 | Адрес: 1-я Красноармейская ул., 1, Санкт-Петербург</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

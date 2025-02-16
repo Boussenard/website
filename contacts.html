@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Магазин экипировки для пауэрлифтинга</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Логотип магазина">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="product.html">Товары</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="auth">
+            <button id="loginBtn">Войти</button>
+            <button id="registerBtn">Регистрация</button>
+            <div id="cartIcon">
+                <img src="images/cart.png" alt="Корзина">
+                <span id="cartCount">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <section class="contact-info">
+            <h1>Контакты</h1>
+            <p><strong>Адрес:</strong> Санкт-Петербург, ул. Профессора Попова, д. 62</p>
+            <p><strong>Телефон:</strong> +7 (812) 346-78-90</p>
+            <p><strong>Email:</strong> info@powerliftgear.ru</p>
+        </section>
+
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1997.04!2d30.316591215960685!3d59.93618798169203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fae6b8a4f%3A0x7c89e8f4d6c55a1c!2z0JzQvtGB0LrQstCwINCg0LDQsdGA0Ysg0JzQvtGB0LrQstCw0Ysg0YPQuy4sIDEsINCh0LDQt9Cw0YHRgtGM0LrQuNC5INC_0LXRgNC-0LLRgdC60LjQtSAxMDAwMDAs0JrQvtCy0YDQutCw0LPQuiDQvtCx0LvQsNGB0YLRjCwgMTAwMDA!5e0!3m2!1sru!2sru!4v1696523400"
+                width="100%"
+                height="400"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <section class="contact-form">
+            <h2>Обратная связь</h2>
+            <form action="#" method="post">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Модальное окно для авторизации -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <h2>Авторизация</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Имя пользователя:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Войти</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Модальное окно для регистрации -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <h2>Регистрация</h2>
+            <form id="registerForm">
+                <label for="regUsername">Имя пользователя:</label>
+                <input type="text" id="regUsername" name="username" required>
+
+                <label for="regEmail">Email:</label>
+                <input type="email" id="regEmail" name="email" required>
+
+                <label for="regPassword">Пароль:</label>
+                <input type="password" id="regPassword" name="password" required>
+
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Подвал сайта -->
+    <footer>
+        <p>&copy; 2023 Магазин экипировки для пауэрлифтинга. Все права защищены.</p>
+        <p>Телефон: +7 (812) 346-78-90 | Адрес: 1-я Красноармейская ул., 1, Санкт-Петербург</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
